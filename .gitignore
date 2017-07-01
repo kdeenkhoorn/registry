@@ -1,0 +1,3 @@
+# ignore everyting in the workspace directory
+/workspace/*
+!/workspace/emptyfile
