@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -t kdedesign/registry:2 .
+docker build -t kdedesign/registry .

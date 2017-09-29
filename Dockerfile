@@ -1,4 +1,4 @@
-FROM kdedesign/debian-stretch:1.0.0
+FROM kdedesign/debian-stretch
 
 MAINTAINER "k.eenkhoorn@gmail.com"
 
