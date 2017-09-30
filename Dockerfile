@@ -1,4 +1,4 @@
-FROM kdedesign/debian-stretch
+FROM cubian.phantasyworld.intern:5000/kdedesign/debian-stretch
 
 MAINTAINER "k.eenkhoorn@gmail.com"
 
