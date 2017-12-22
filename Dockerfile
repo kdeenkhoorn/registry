@@ -3,6 +3,11 @@ FROM cubian.phantasyworld.intern:5000/kdedesign/debian-stretch
 MAINTAINER "k.eenkhoorn@gmail.com"
 
 ENV DEBIAN_FRONTEND noninteractive
+# Update basic OS image
+RUN apt-get update \
+    && apt-get dist-upgrade -y \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
 # Create user and group account
 RUN groupadd -g 2002 registry \
