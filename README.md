@@ -1,5 +1,5 @@
 # Registry
-This docker image is an armhf version of Docker private repository v2.0 based on my own debian 9 linux image.
+This docker image is an armhf version of Docker private repository v2.0 based on my own Debian 9 linux image.
 
 ## Image dependencies:
 - One volume: /var/lib/registry required for persistent storage
@@ -8,7 +8,9 @@ This docker image is an armhf version of Docker private repository v2.0 based on
 - Group: registry (gid: 2002)
 
 ## Typical run command:
-- $ docker container run --name registry --restart always -d -p 5000:5000  -v /data/docker/registry:/var/lib/registry kdedesign/registry
+```
+$ docker container run --name registry --restart always -d -p 5000:5000  -v /data/docker/registry:/var/lib/registry kdedesign/registry
+```
 
 ## Build characteristics:
 - Debian 9 (kdedesign/debian-stretch:1.0)
@@ -16,10 +18,13 @@ This docker image is an armhf version of Docker private repository v2.0 based on
 - Repository v2.0 (https://github.com/docker/distribution/tree/master/cmd/registry)
 
 ## Repository build command:
-- go build https://github.com/docker/distribution/tree/master/cmd/registry
+```
+$ go build https://github.com/docker/distribution/tree/master/cmd/registry
+```
 
 ## More info:
 - Check https://github.com/kdeenkhoorn/registry
+- Check https://hub.docker.com/r/kdedesign/registry/
 
 Have fun!
 
